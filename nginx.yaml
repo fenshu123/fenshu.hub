@@ -1,0 +1,20 @@
+piVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2020-07-15T13:00:39Z"
+  generation: 2
+  labels:
+    app: redis
+  name: redis
+  namespace: default
+  resourceVersion: "9757984"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/redis
+  uid: 2f0f1c92-c69b-11ea-9668-fa163e9d327e
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
